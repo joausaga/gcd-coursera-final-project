@@ -2,14 +2,14 @@
 library(dplyr)
 
 # Read datasets
-train_set = read.table("./data/X_train.txt", sep="")
-train_labels = read.table("./data/y_train.txt", sep="")
-test_set = read.table("./data/X_test.txt", sep="")
-test_labels = read.table("./data/y_test.txt", sep="")
-activity_labels = read.table("./data/activity_labels.txt", sep="")
-features = read.table("./data/features.txt", sep="")
-subject_train = read.table("./data/subject_train.txt", sep="")
-subject_test = read.table("./data/subject_test.txt", sep="")
+train_set = read.table("X_train.txt", sep="")
+train_labels = read.table("y_train.txt", sep="")
+test_set = read.table("X_test.txt", sep="")
+test_labels = read.table("y_test.txt", sep="")
+activity_labels = read.table("activity_labels.txt", sep="")
+features = read.table("features.txt", sep="")
+subject_train = read.table("subject_train.txt", sep="")
+subject_test = read.table("subject_test.txt", sep="")
 
 # Add columns name
 colnames(activity_labels) = c("id","activity_name")
